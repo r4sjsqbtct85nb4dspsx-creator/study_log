@@ -1,6 +1,6 @@
 学習達成報告 chaptor1-2 変数
 
-作成者
+作成者:r4sjsqbtct85nb4dspsx-creator
 作成日:2026-06-18
 
 ⚫︎範囲

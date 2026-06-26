@@ -1,5 +1,8 @@
 学習達成報告 chaptor0
 
+作成者:r4sjsqbtct85nb4dspsx-creator
+作成日:2026-06-13
+
 ⚫︎範囲
 :スッキリわかるPython入門第2版スッキリわかるシリーズ
  chapter0 ようこそPythonの世界へ
