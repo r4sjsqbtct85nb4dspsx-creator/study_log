@@ -1,0 +1,40 @@
+print("""
+問題2
+○○中学1年1組の数学のテストの結果の統計をまとめなさい。
+欠席者は結果に含まないため除外しなさい。
+
+      A子 : 75
+      B男 : 66
+      C美 : 54
+      D太 : 35
+      E香 : 99
+      F乃 : 欠席
+      G斗 : 87
+
+※赤点は60点以下です。
+※追試でF乃さんが45点、
+  G斗さんはカンニングが発覚したため今回の結果から除外します。
+※A子さんの点数について、答案返却の際に間違いがあったことが判明したため
+  変更します。 75 → 77
+""".strip())
+
+# 受験者のデータ
+members = ["A子", "B男", "C美", "D太", "E香", "G斗"]
+members.append("F乃")
+members.remove("G斗")
+
+#テストの結果
+scores = [75, 66, 54, 35, 99, 87]
+scores.append(45)
+scores.remove(87)
+scores[0] = 77
+
+# 計算
+total = sum(scores)
+avg = total / len(scores)
+
+#テストの点数が高い順に並べ替え
+members_h = ["E香", "A子", "B男", "C美", "F乃", "D太"]
+scores_h = [99, 77, 66, 54, 45, 35]
+
+print(f"受験者は、{members}、合計は{total} 点、平均は{avg}点、\n最高点は{members_h[0]}、{scores_h[0]}点、\n最低点は{members_h[-1]}、{scores_h[-1]}点、\n赤点の受験者は{members_h[3:]}")
